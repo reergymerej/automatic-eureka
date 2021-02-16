@@ -1,0 +1,86 @@
+
+<h1>Hello</h1>
+
+This is the main page.  What should I do?
+
+What are some common things I like to do?
+
+* plan my day
+* make todo lists
+* journal
+
+Can I do these here?
+
+Yeah, why not?  This site can be about making this site.
+
+I need a place to plan.  Do tiny MVP work.
+
+<img src="https://blog.crisp.se/wp-content/uploads/2016/01/Making-sense-of-MVP-.jpg" />
+
+I really like to write in Vim instead of in any sort of GUI, so I should not do
+a journal here.  Planning my day may be OK.  I don't want to get bogged down in
+JS.  I want to use this to learn Elixir.
+
+I can create a backend to receive my TODO Bucket.
+
+I'll need a place here to document then learning.
+
+Maybe I can do both.  What if I write in Vim and push it into the app somewhere?
+I like the idea that Git could record the history, though.  Then an individual
+could jump around from commit to commit and watch it change.
+
+So the code will have to have documentation.  That's not linear, though.  That
+doesn't tell the story.  If you just look at code, there may be comments all
+over, but they may have different ages.
+
+I would like to practice Elixir.  This project is just a vehicle for that.
+
+What are the most common cases out there?  What does an Elixir writing dude do
+all day?  What is the most common use case for a Phoenix app?
+
+https://www.quora.com/What-are-some-use-cases-where-Elixir-Phoenix-is-more-advantageous-than-Ruby-Rails
+
+Real-time channels (sockets) like chat.
+
+It's all about concurrency, resilience, and distribution.
+
+Instead of learning Phoenix, what if I learned about escripts and started using Elixir casually?
+https://hexdocs.pm/mix/Mix.Tasks.Escript.Build.html#content
+
+---
+
+What is the problem I'm trying to solve?
+
+I want to learn a new language, but I don't have anything interesting to do with it.
+
+MVP - Build a system where I can list my problem, define an MVP solution, and then implement that solution.
+
+Problem: I want to show a history of problems and the solutions.
+Problem: I want the evolution to be something that can be followed.
+Problem: I have many problems and I need a way to sort them.
+
+This is self-defined.  I need a backlog.  I need a way to list problems and to address them.
+
+MVP: Create a new section where I can list problems.  I can sort them in text based on priority.
+
+---
+<h2>Problems</h2>
+<ol>
+  <li>
+    Problem: I want to show a history of problems and the solutions.
+  </li>
+  <li>
+    Problem: I want the evolution to be something that can be followed.
+  </li>
+  <li>
+    Problem: As I create solutions (MVPs), I will change the content.  I want the history/evolution to be something that can be followed.
+    <br>
+    Solution: After each solution, add a commit.
+  </li>
+  <li>
+    Problem: I have many problems and I need a way to sort them.
+  </li>
+  <li>
+    Problem: I want a way to merge similar problems.
+  </li>
+</ol>
