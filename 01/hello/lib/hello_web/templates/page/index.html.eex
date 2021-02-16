@@ -1,5 +1,26 @@
-
 <h1>Hello</h1>
+
+<h2>Problems</h2>
+<h3>Unsolved</h3>
+<ol>
+  <%= for x <- unsolved() do %>
+    <li>
+      Problem: <%= x[:problem] %>
+    </li>
+  <% end %>
+</ol>
+
+<h3>Solved</h3>
+<ol>
+  <%= for x <- solved() do %>
+    <li>
+      Problem: <%= x[:problem] %>
+      <br>
+      Solution: <%= x[:solution] %>
+    </li>
+  <% end %>
+</ol>
+
 
 This is the main page.  What should I do?
 
@@ -64,45 +85,3 @@ This is self-defined.  I need a backlog.  I need a way to list problems and to a
 MVP: Create a new section where I can list problems.  I can sort them in text based on priority.
 
 ---
-<h2>Problems</h2>
-<h3>Unsolved</h3>
-<ol>
-  <li>
-    <%= p2() %>
-  </li>
-</ol>
-
-<h3>Solved</h3>
-<ol>
-  <li>
-    <%= problem1() %>
-    <br>
-    <%= solution1() %>
-  </li>
-  <li>
-    <%= pm1() %>
-    <br>
-    <%= sm1() %>
-  </li>
-  <li>
-    <%= pm2() %>
-    <br>
-    <%= sm2() %>
-  </li>
-  <li>
-    <%= pm3() %>
-    <br>
-    <%= sm3() %>
-  </li>
-  <li>
-    <%= pm4() %>
-  </li>
-  <li>
-    <%= pm5() %>
-  </li>
-  <li>
-    <%= pm6() %>
-    <br>
-    <%= sm6() %>
-  </li>
-</ol>
