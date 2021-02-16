@@ -65,7 +65,26 @@ MVP: Create a new section where I can list problems.  I can sort them in text ba
 
 ---
 <h2>Problems</h2>
+<h3>Unsolved</h3>
 <ol>
+  <li>
+    Problem: I have many problems and I need a way to sort them.
+  </li>
+  <li>
+    Problem: I want a way to merge similar problems.
+  </li>
+  <li>
+    Problem: I need a way to separate solved and unsolved problems.
+  </li>
+</ol>
+
+<h3>Solved</h3>
+<ol>
+  <li>
+    Problem: I need a way to show which problem I am working on.
+    <br>
+    Solution: Separate the lists.
+  </li>
   <li>
     Problem: I want to show a history of problems and the solutions.
   </li>
@@ -76,11 +95,5 @@ MVP: Create a new section where I can list problems.  I can sort them in text ba
     Problem: As I create solutions (MVPs), I will change the content.  I want the history/evolution to be something that can be followed.
     <br>
     Solution: After each solution, add a commit.
-  </li>
-  <li>
-    Problem: I have many problems and I need a way to sort them.
-  </li>
-  <li>
-    Problem: I want a way to merge similar problems.
   </li>
 </ol>
