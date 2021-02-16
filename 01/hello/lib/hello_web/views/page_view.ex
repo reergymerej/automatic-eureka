@@ -4,6 +4,14 @@ defmodule HelloWeb.PageView do
   def solved() do
     [
       %{
+        :created => "Tue Feb 16 18:47:54 EST 2021",
+        :problem => "I want to record the date when a problem is created/solved.",
+        :solution => """
+            I can add new fields to the solved items and list.  I will need to render them in the template.
+          """,
+        :solved => "Tue Feb 16 18:47:54 EST 2021",
+      },
+      %{
         :problem => "It is difficult to keep track of functions and their placement in the markup.",
         :solution => """
           Find another data structure to store these.

@@ -11,15 +11,19 @@
 </ol>
 
 <h3>Solved</h3>
-<ol>
+<ul>
   <%= for x <- solved() do %>
     <li>
-      Problem: <%= x[:problem] %>
+      <strong>Created:</strong> <%= x[:solved] %>
       <br>
-      Solution: <%= x[:solution] %>
+      <strong>Problem:</strong> <%= x[:problem] %>
+      <br>
+      <strong>Solution:</strong> <%= x[:solution] %>
+      <br>
+      <strong>Solved:</strong> <%= x[:solved] %>
     </li>
   <% end %>
-</ol>
+</ul>
 
 
 This is the main page.  What should I do?
