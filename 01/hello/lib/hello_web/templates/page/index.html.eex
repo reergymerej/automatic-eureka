@@ -2,25 +2,63 @@
 
 <h2>Problems</h2>
 <h3>Unsolved</h3>
-<ol>
+<ul>
   <%= for x <- unsolved() do %>
     <li>
-      Problem: <%= x[:problem] %>
+      <%= if Map.has_key?(x, :created) do %>
+        <div>
+          <strong>Created:</strong> <%= x[:created] %>
+        </div>
+      <% end %>
+      <%= if Map.has_key?(x, :problem) do %>
+        <div>
+          <strong>Problem:</strong> <%= x[:problem] %>
+        </div>
+      <% end %>
+      <%= if Map.has_key?(x, :notes) do %>
+        <div>
+          <strong>Notes:</strong>
+          <pre>
+            <%= x[:notes] %>
+          </pre>
+        </div>
+      <% end %>
     </li>
   <% end %>
-</ol>
+</ul>
 
 <h3>Solved</h3>
 <ul>
   <%= for x <- solved() do %>
     <li>
-      <strong>Created:</strong> <%= x[:solved] %>
-      <br>
-      <strong>Problem:</strong> <%= x[:problem] %>
-      <br>
-      <strong>Solution:</strong> <%= x[:solution] %>
-      <br>
-      <strong>Solved:</strong> <%= x[:solved] %>
+      <%= if Map.has_key?(x, :created) do %>
+        <div>
+          <strong>Created:</strong> <%= x[:created] %>
+        </div>
+      <% end %>
+      <%= if Map.has_key?(x, :problem) do %>
+        <div>
+          <strong>Problem:</strong> <%= x[:problem] %>
+        </div>
+      <% end %>
+      <%= if Map.has_key?(x, :solution) do %>
+        <div>
+          <strong>Solution:</strong> <%= x[:solution] %>
+        </div>
+      <% end %>
+      <%= if Map.has_key?(x, :solved) do %>
+        <div>
+          <strong>Solved:</strong> <%= x[:solved] %>
+        </div>
+      <% end %>
+      <%= if Map.has_key?(x, :notes) do %>
+        <div>
+          <strong>Notes:</strong>
+          <pre>
+            <%= x[:notes] %>
+          </pre>
+        </div>
+      <% end %>
     </li>
   <% end %>
 </ul>
